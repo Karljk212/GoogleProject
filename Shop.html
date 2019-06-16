@@ -1,0 +1,65 @@
+{% extends 'master.html' %}
+
+{%block head %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+.checkbox{
+padding:70px 0px 0px 200px;
+float:2000px;
+color:red;
+}
+</style>
+</head>
+
+
+{% endblock %}
+
+{%block body %}
+<body>
+
+    <h4> Welcome to your Google shopping list !(email address)!</h4>
+    <div class ="checkbox">
+    <form action="/action_page.php">
+    <label for = "checkbox1">
+    <span>Google wifi</span>
+     <input type="checkbox" class="checkbox style-2 pull-right" name="checkbox1">
+    </label>
+    <br><label for = "checkbox2"></br>
+    <span>Google Watch</span>
+     <input type="checkbox" name="checkbox2" class="checkbox style-2 pull-right">
+    </label>
+    <br><label for = "checkbox3"></br>
+    <span>Google Stadia</span>
+    <input type="checkbox" name="checkbox3" class="checkbox style-2 pull-right"><br><br>
+    </label>
+     
+     
+     
+    <!--  <input type="submit" value="Submit">-->
+      </div>
+    </form>
+    <a href="#" class="button">Add</a>
+    <button class="button">Delete</button>
+    <input type="button" class="button" value="Edit">
+    <input type="button" class="button" value="Logout">
+    
+    </body>
+    </html>
+
+{% endblock %}
